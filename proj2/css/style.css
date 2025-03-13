@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #42455a;
+    display: flex;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: #42455a;
+}
+
+.menu ul {
+    display: inline-flex;
+    margin: 50px;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 0 20px;
+    color: #b2b1b1;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 30px;
+    margin-top: -7px;
+    margin-right: 48px;
+}
+
+.active {
+    color: #19dafa !important;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.signup-btn {
+    top: 40px;
+    right: 80px;
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da, #19d7f8);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.signup-btn span {
+    display: block;
+    padding: 8px 22px;
+}
+
+.banner {
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 130px;
+    position: absolute;
+    color: #fff;
+}
+
+.app-text {
+    width: 50%;
+    float: left;
+
+}
+
+.app-text h1 {
+    font-style: 43px;
+    width: 640px;
+    position: relative;
+    margin-left: 40px;
+}
+
+.app-text p {
+    width: 650px;
+    font-style: 15px;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: #919191;
+}
+
+.app-picture {
+    width: 50%;
+    float: right;
+}
+
+.app-picture img {
+    display: flex;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.play-btn {
+    margin-left: 40px;
+    display: inline-flex;
+}
+
+.play-btn-inner {
+    transition: 1s;
+    height: 50px;
+    width: 50px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da, #19d7f8);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    text-align: center;
+}
+
+.play-btn-inner:hover {
+    border-radius: 50%;
+    background-image: linear-gradient(#42455a, #42455a), linear-gradient(315deg, #fd00da, #19d7f8);
+    text-align: center;
+    transition-duration: 0.2s;
+}
+
+.play-btn-inner .fa {
+    padding: 18px 0;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+small {
+    margin: auto 20px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #19dafa;
+    letter-spacing: 3px;
+}
+
+.quick-links {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    color: #000000ca;
+    background: linear-gradient(to right, #db1bf6, #19d7f9);
+    border: 2px solid transparent;
+    border-radius: 0 40px 0 0;
+}
+
+.quick-links ul {
+    display: inline-flex;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.quick-links ul li {
+    list-style: none;
+    margin: 0 3vw;
+    cursor: pointer;
+}
+
+.quick-links ul li .fa,
+.fab {
+    transition: 0.2s;
+    font-size: 25px;
+    color: #fff;
+}
+
+.quick-links ul li p {
+    margin-top: 15px;
+    font-size: 10px;
+    color: #fff;
+}
+
+.social-icons {
+    display: block;
+    position: absolute;
+    right: 3vw;
+    bottom: 45vh;
+}
+
+.social-icons ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons ul li {
+    padding: 5px 0 5px 0;
+    list-style: none;
+}
+
+.social-icons ul li .fa-facebook,
+.fa-twitter,
+.fa-linkedin,
+.fa-instagram {
+    transition: 0.2s;
+    font-size: 24px;
+    text-align: center;
+    color: #19d7f9;
+}
+
+.social-icons ul li .fab:hover {
+    color: rgb(210, 232, 255);
+}
+
+.quick-links ul li:hover .fa:hover,
+.fab:hover {
+    color: rgb(21, 21, 21);
+}
