@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- link google fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <title>Sessão de Contatos</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Conecte-se Comigo</h1>
+        <p>Eu adoraria responder às suas dúvidas e ajudá-lo.<br>Sinta-se livre para entrar em contato comigo!</p>
+        <address class="contact-box">
+            <div class="contact-left">
+                <h3>Envie a sua mensagem</h3>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <input type="hidden" name="access_key" value="5443ff4c-5287-4462-b892-83dae68f8eda">
+
+                            <label for="name">Celular</label>
+                            <input type="number" placeholder="+55 (00)940028922" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="name">Nome</label>
+                            <input type="text" name="name" id="name" placeholder="Rafael Rios" required>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="name">Assunto</label>
+                            <input type="text" name="subject" id="subject" placeholder="Exemplo de Assunto" required>
+                        </div>
+                    </div>
+                    <label for="msg">Mensagem</label>
+                    <textarea name="msg" id="msg" rows="5" placeholder="Sua Mensagem"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+            <div class="contact-right">
+                <h3>Contate-me</h3>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>dev.rafaelrios@outlook.com</td>
+                    </tr>
+                    <tr>
+                        <td>Celular</td>
+                        <td>+55 11 966668301</td>
+                    </tr>
+                    <tr>
+                        <td>Endereço</td>
+                        <td>Rua Tito, 54 - SENAC<br>
+                            São Paulo, SP</td>
+                    </tr>
+                </table>
+            </div>
+        </address>
+    </div>
+</body>
+
+</html>
